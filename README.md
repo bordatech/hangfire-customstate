@@ -84,6 +84,6 @@ After a few seconds, the job will be listed in the page http://localhost:5000/ha
 
 There are two endpoints to complete job as *succeeded* or *failed*.
 
-To complete as succeeded: http://localhost:5000/api/job/<jobId>/success
+To complete as succeeded: http://localhost:5000/api/job/{jobId}/success
 
-To complete as failed: http://localhost:5000/api/job/<jobId>/fail
+To complete as failed: http://localhost:5000/api/job/{jobId}/fail
