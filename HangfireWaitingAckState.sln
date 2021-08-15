@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.WaitingAckState", "src\Hangfire.WaitingAckState\Hangfire.WaitingAckState.csproj", "{48BA0A2A-FF24-40CD-BA96-051DAA5F529B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.WaitingAckState.SampleApp", "src\Hangfire.WaitingAckState.SampleApp\Hangfire.WaitingAckState.SampleApp.csproj", "{14EAC577-4513-4609-8786-3C880C3551C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48BA0A2A-FF24-40CD-BA96-051DAA5F529B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BA0A2A-FF24-40CD-BA96-051DAA5F529B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BA0A2A-FF24-40CD-BA96-051DAA5F529B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BA0A2A-FF24-40CD-BA96-051DAA5F529B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EAC577-4513-4609-8786-3C880C3551C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EAC577-4513-4609-8786-3C880C3551C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EAC577-4513-4609-8786-3C880C3551C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EAC577-4513-4609-8786-3C880C3551C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

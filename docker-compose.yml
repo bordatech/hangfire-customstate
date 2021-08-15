@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres
+    container_name: hangfire.waitingack.postgres
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - ALLOW_IP_RANGE='0.0.0.0/0'
+      - TZ=Asia/Istanbul
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdb:/var/lib/postgresql/data
+    networks:
+      - common_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: hangfire.waitingack.pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@admin.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    depends_on:
+      - "postgres"
+    networks:
+      - common_network
+
+networks:
+  common_network:
+    name: common-network
+
+volumes:
+  postgresdb:
+  pgadmin:
